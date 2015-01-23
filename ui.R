@@ -21,7 +21,7 @@ shinyUI(fluidPage(
                            This action will generate the graph in the main panel. You can download an example of the zip file in the 
                            githup repository associated with this project (right click on the link -> save link ...): ", a("Input.zip",href="http://github.com/coursera1/DDP-Project/raw/master/Input.zip")),
                         h6("Now, just clic the 'Choose file' and select the 'Input.zip' file you've just downloaded."),
-                        h6("Once this done, you can play around with the graph tuning widgets to select the date range, the x axis tick or the y axis limit and see the results on the graph."),
+                        h6("Once this done, you can play around with the graph tuning parameters to select the date range, the x axis tick or the y axis limit and see the results on the graph."),
                         h5("Graph"),
                         h6("The monitored values are plotted on the Y axis and colored by server names. The size of the dots were made proportional to the values to make them more 
                            visible as these points are more important for the analysis."),
