@@ -44,8 +44,10 @@ shinyServer(function(input, output) {
         output$G1 <- renderPlot({
                 if (is.null(data())) return (NULL)
                 
-                ## FIlter and refactor if necessary
+                ## Filter and refactor if necessary
                 fData<-filter(data(), time>begDate() & time<endDate())
+                if (dim(fData)[1]<1) return(NULL) ## Nothing left in filter !
+                
                 fData$server<-factor(fData$server)
                 
                 xBr<-paste(xBreaks(), "hour")
