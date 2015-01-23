@@ -16,20 +16,20 @@ shinyUI(fluidPage(
                            on differents servers in a datacenter. Please, follow the instructions below to run this app."),
                         h5("Upload zip file"),
                         h6("The script generate a log file on each server. 
-                           They are then combined in a zip file. It is this zip file that needs to be load in the 'Upload server zip file'.
+                           They are then combined in a zip file. It is this zip file that needs to be loaded in the 'Upload server zip file'.
                            This action will generate the graph in the main panel. You can download an example of the zip file in the 
-                           githup repository associated with this project: ", a("Input.zip",href="http://github.com/coursera1/DDP-Project/raw/master/Input.zip")),
+                           githup repository associated with this project (right clic on the link -> save link ...): ", a("Input.zip",href="http://github.com/coursera1/DDP-Project/raw/master/Input.zip")),
                         h6("Now, just clic the 'Choose file' and select the 'Input.zip' file you've just downloaded."),
-                        h6("Once this done, you can 'play around' with graph tuning widgets to select the date range, the x axis tick or the y axis limit and see the results on the graph."),
+                        h6("Once this done, you can play around with graph tunithe ng widgets to select the date range, the x axis tick or the y axis limit and see the results on the graph."),
                         h5("Graph"),
                         h6("The monitored values are plotted on the Y axis and colored by server names. The size of the dots were made proportionnal to the values to make them more 
-                           visible as these point are more important for the analysis."),
+                           visible as these points are more important for the analysis."),
                         h5("Upload events file"),
                         h6("You can optionnaly upload another file that contains a series of time-events associations that will be plotted
-                           as vertical lines on the graph. You can find an example here: ", a("Events.cvs",href="http://github.com/coursera1/DDP-Project/raw/master/Events.csv")),
+                           as vertical lines on the graph. You can find an example here (right clic on the link -> save link  ...): ", a("Events.cvs",href="http://github.com/coursera1/DDP-Project/raw/master/Events.csv")),
                         h5("Table views"),
                         h6("Two table views of the servers values and time-events data are displayed under the graph.")),
-                mainPanel(h3("Graphs"),
+                mainPanel(h3("Graph"),
                           plotOutput("G1"),
                           h3("Server Values"),
                           dataTableOutput("serverValue"),
